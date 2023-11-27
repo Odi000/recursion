@@ -1,0 +1,12 @@
+*,
+*::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    color: wheat;
+}
+
+:root {
+    font-size: 10px;
+    background-color: hsl(0, 0%, 10%);
+}
