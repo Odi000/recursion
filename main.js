@@ -212,6 +212,14 @@ class LinkedList {
             if (value === this[i].value) return i;
         } return null;
     }
+
+    toString(node = this[0]) {
+        if (node === null) return "";
+
+        let string = `(${node.value})`;
+        if (node.pointer) string += " -> " + this.toString(node.pointer);
+        return string;
+    }
 }
 
 const vGTAje = new LinkedList();
